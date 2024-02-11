@@ -5,5 +5,6 @@ public enum VehicleType {
     MOTO,
     SEDAN,
     BUS,
-    CAMIONETA
+    CAMIONETA,
+    BICICLETA
 }
