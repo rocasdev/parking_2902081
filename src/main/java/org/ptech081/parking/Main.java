@@ -57,6 +57,7 @@ public class Main {
             System.out.println("Registro: \n");
             System.out.println("Cliente: "+r.customer.name + " " + r.customer.lastName);
             System.out.println("Vehiculo: "+r.vehicle.vehicleType + " | Placa: "+r.vehicle.plate);
+            System.out.println("Parqueadero: "+ r.slot.slot);
             System.out.println("Fecha de Inicio: "+r.startDate+"\nHora de Inicio: "+r.startTime);
             System.out.println("Fecha de Salida: "+r.endDate+"\nHora de Salida: "+r.endTime);
             System.out.println("Precio: "+r.cost);
