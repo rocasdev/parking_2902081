@@ -10,6 +10,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        //Creating Employee
+        Employee employee1 = new Employee("Bob", "Esponja", 12345L);
+
         //Creating Vehicles
         Vehicle vehicle1 = new Vehicle();
         vehicle1.plate = "ASD456";
@@ -44,8 +47,8 @@ public class Main {
         List<Register> myRegisters = new ArrayList<>(); 
 
         //Creating first register
-        Register register1 = new Register(currentDate, currentTime, endDate1, endTime1, 5000L, slot1, customer1.myVehicles.get(0), customer1);
-        Register register2= new Register(currentDate, currentTime, endDate2, endTime2, 3000L, slot2, customer2.myVehicles.get(0), customer2);
+        Register register1 = new Register(currentDate, currentTime, endDate1, endTime1, 5000L, slot1, customer1.myVehicles.get(0), employee1, customer1);
+        Register register2= new Register(currentDate, currentTime, endDate2, endTime2, 3000L, slot2, customer2.myVehicles.get(0), employee1, customer2);
 
         //Adding registers to registers list
         myRegisters.add(register1);
@@ -55,6 +58,7 @@ public class Main {
         for(Register r : myRegisters){
             System.out.println("------------------------------------------------------------------");
             System.out.println("Registro: \n");
+            System.out.println("Empleado Responsable: "+r.employee.name + " " + r.employee.lastName + " | Codigo: "+r.employee.id);
             System.out.println("Cliente: "+r.customer.name + " " + r.customer.lastName);
             System.out.println("Vehiculo: "+r.vehicle.vehicleType + " | Placa: "+r.vehicle.plate);
             System.out.println("Parqueadero: "+ r.slot.slot);
@@ -63,6 +67,5 @@ public class Main {
             System.out.println("Precio: "+r.cost);
             System.out.println("------------------------------------------------------------------");
         }
-
     }
 }

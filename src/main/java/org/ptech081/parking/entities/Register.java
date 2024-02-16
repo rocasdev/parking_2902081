@@ -14,6 +14,7 @@ public class Register {
     //Relational Attributes
     public Slot slot;
     public Vehicle vehicle;
+    public Employee employee;
     public Customer customer;
     
     //Construct Methods
@@ -21,7 +22,7 @@ public class Register {
     }
 
     public Register(LocalDate startDate, LocalTime startTime, LocalDate endDate, LocalTime endTime, Long cost,
-            Slot slot, Vehicle vehicle, Customer customer) {
+            Slot slot, Vehicle vehicle, Employee employee, Customer customer) {
         this.startDate = startDate;
         this.startTime = startTime;
         this.endDate = endDate;
@@ -29,6 +30,7 @@ public class Register {
         this.cost = cost;
         this.slot = slot;
         this.vehicle = vehicle;
+        this.employee = employee;
         this.customer = customer;
     }
     
