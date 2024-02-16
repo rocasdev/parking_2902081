@@ -45,7 +45,7 @@ public class Main {
 
         //Creating first register
         Register register1 = new Register(currentDate, currentTime, endDate1, endTime1, 5000L, slot1, customer1.myVehicles.get(0), customer1);
-        Register register2= new Register(currentDate, currentTime, endDate2, endTime2, 3000L, slot1, customer1.myVehicles.get(0), customer1);
+        Register register2= new Register(currentDate, currentTime, endDate2, endTime2, 3000L, slot2, customer2.myVehicles.get(0), customer2);
 
         //Adding registers to registers list
         myRegisters.add(register1);
