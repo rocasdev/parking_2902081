@@ -1,5 +1,5 @@
 package org.ptech081.parking.entities;
 
-public class Room {
-    
+public class Slot {
+
 }
